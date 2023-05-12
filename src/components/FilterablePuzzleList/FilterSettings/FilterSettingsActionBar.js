@@ -10,8 +10,6 @@ const FilterActionBar = forwardRef(
         text={`${foundCount} puzzles found`}
         color="dark"
         background="white"
-        // needs z-index for position-fixed to show in front of Accordion
-        style={{ zIndex: "1010" }}
       >
         <Button variant="secondary" onClick={onClearFilterClick}>
           Clear Filter
