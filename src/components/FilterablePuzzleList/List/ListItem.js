@@ -13,7 +13,7 @@ const ListItem = forwardRef(({ puzzle, isSelected, onClick }, ref) => {
       role="button"
       onClick={handleClick}
     >
-      <th scope="row" className="text-white bg-primary">
+      <th scope="row" className={isSelected ? "text-white" : undefined}>
         {puzzle.rating}
       </th>
 
